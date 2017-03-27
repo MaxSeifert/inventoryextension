@@ -1,32 +1,22 @@
 {
-  "name": "t3g/blog",
-  "description": "inventory extension",
-  "minimum-stability": "dev",
-  "type": "typo3-cms-extension",
-  "license": "GPL-2.0+",
-  "authors": [
-    {
-      "name": "Seifert",
-      "role": "Developer",
-      "homepage": "http://typo3.com/"
-    }
-  ],
-  "autoload": {
-    "psr-4": {
-      "T3G\\AgencyPack\\Blog\\": "Classes/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "T3G\\AgencyPack\\Blog\\Tests\\": "Tests/"
-    }
-  },
-  "require": {
-    "typo3/cms-core": ">=7.6.0,<8.4.99"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "7.0.0"
-  }
+	"name": "MyVendor/Inventory",
+	"type": "typo3-cms-extension",
+	"description": "",
+	"minimum-stability": "alpha",
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Maximilian Seifert",
+			"email": "max@seifert.cc"
+		}
+	],
+	"replace": {
+         "inventory": "self.version",
+         "typo3-ter/inventory": "self.version"
+       },
+	"autoload": {
+		"psr-4": {
+			"MyVendor\\Inventory\\": "Classes/"
+		}
+	}
 }
-
-
